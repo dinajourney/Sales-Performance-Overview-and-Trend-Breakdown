@@ -16,6 +16,8 @@ The project focuses on the following areas:
 4. Geographic Analysis – Revenue contribution across customer locations
 
 **View Power BI Files**[View Files](Files)
+**The Excel Analysis File** [View file](https://github.com/dinajourney/gamezone-sales-performance-overview-and-trend-breakdowns-English-/blob/main/gamezone-orders-data_CLeaned.xlsx)
+
 ---
 
 # Data Preparation
