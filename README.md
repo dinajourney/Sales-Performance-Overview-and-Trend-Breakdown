@@ -114,6 +114,7 @@ The cleaned tables were connected using a star schema model inside Power BI.
 The model consists of:
 
 * Fact_InternetSales
+* Fact_Budget
 * Dim_Customers
 * Dim_Product
 * Dim_Calendar
