@@ -20,12 +20,12 @@ The project focuses on the following areas:
 [View File](SALES.pbix)
 
 **SQL Data Cleaning Script**
-[View File](SQLQuery_DateCleaning.sql)
+[View File](Files)
 
 ---
 
 # Executive Summary
-
+![Dashboard Preview](Files/dashboard.png)
 ## Overview of Findings
 
 The dataset contains approximately **58,000 sales transactions** between **2023 and 2025**, generating total revenue of approximately **$29.27M**.
