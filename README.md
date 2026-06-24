@@ -1,5 +1,4 @@
-# Sales-Performance-Overview-and-Trend-Breakdown
-
+# Sales Performance Overview and Trend Breakdown
 
 ## Sales Performance Analysis
 
@@ -7,7 +6,7 @@
 
 This project analyzes internet sales transaction data to evaluate business performance, identify revenue drivers, understand customer purchasing behavior, and uncover product trends.
 
-The dataset consists of sales transactions, customer information, product details, and calendar data. The analysis was prepared using SQL, Excel, and Power BI to support business decision-making through data-driven insights.
+The dataset consists of sales transactions, customer information, product details, and calendar data. SQL was used for data cleaning and transformation, while Power BI was used for data modeling and dashboard development.
 
 The project focuses on the following areas:
 
@@ -16,16 +15,92 @@ The project focuses on the following areas:
 3. Customer Analysis – Purchasing behavior and customer demographics
 4. Geographic Analysis – Revenue contribution across customer locations
 
-**Power BI Dashboard File**
-[View File](SALES.pbix)
+---
 
-**SQL Data Cleaning Script**
-[View File](Files)
+# Data Preparation
+
+## SQL Data Cleaning
+
+The raw datasets were cleaned and transformed using SQL before being loaded into Power BI.
+
+### Customer Data Cleaning
+
+![Customer SQL](Files/customer_sql.png)
+
+Key tasks performed:
+
+* Standardized customer information
+* Removed unnecessary columns
+* Checked for missing values
+* Prepared customer dimension table
+
+### Product Data Cleaning
+
+![Product SQL](Files/product_sql.png)
+
+Key tasks performed:
+
+* Organized product hierarchy
+* Standardized category information
+* Prepared product dimension table
+
+### Sales Data Cleaning
+
+![Sales SQL](Files/sales_sql.png)
+
+Key tasks performed:
+
+* Cleaned transaction records
+* Validated sales amounts
+* Prepared fact sales table
+
+### Calendar Data Cleaning
+
+![Calendar SQL](Files/calendar_sql.png)
+
+Key tasks performed:
+
+* Created date hierarchy
+* Generated month and year fields
+* Prepared calendar dimension table
+
+---
+
+# Data Model
+
+The cleaned tables were connected using a star schema model inside Power BI.
+
+![Data Model](Files/model_view.png)
+
+The model consists of:
+
+* Fact_InternetSales
+* Dim_Customers
+* Dim_Product
+* Dim_Calendar
+
+This structure enables efficient analysis across customers, products, and time periods.
+
+---
+
+# Dashboard
+
+## Sales Performance Dashboard
+
+![Dashboard Preview](Files/dashboard.png)
+
+The dashboard provides an interactive overview of:
+
+* Revenue performance
+* Order trends
+* Product performance
+* Customer demographics
+* Geographic distribution
 
 ---
 
 # Executive Summary
-![Dashboard Preview](Files/Dashboard.png)
+
 ## Overview of Findings
 
 The dataset contains approximately **58,000 sales transactions** between **2023 and 2025**, generating total revenue of approximately **$29.27M**.
@@ -38,8 +113,6 @@ Key performance metrics:
 
 Revenue growth accelerated significantly in 2025, making it the strongest year in the dataset.
 
-Yearly performance summary:
-
 | Year | Revenue |
 | ---- | ------: |
 | 2023 |  $7.08M |
@@ -48,10 +121,8 @@ Yearly performance summary:
 
 Compared with 2024:
 
-* Revenue increased by approximately **180%**
-* Order volume increased by approximately **551%**
-
-The substantial increase in transaction volume suggests strong business expansion during 2025.
+* Revenue increased by approximately 180%
+* Order volume increased by approximately 551%
 
 ---
 
@@ -59,69 +130,56 @@ The substantial increase in transaction volume suggests strong business expansio
 
 ## 1. Sales Performance
 
-* Total revenue reached approximately **$29.27M** across the analyzed period.
-* **2025 generated the highest revenue**, contributing more than half of total sales.
-* Revenue peaked in **December 2025**, generating approximately **$1.87M**.
-* Other high-performing months include:
+![Sales Trend](Files/sales_trend.png)
 
-  * November 2025
-  * October 2025
-  * June 2025
-  * August 2025
-* The strong year-end performance indicates a clear seasonal sales pattern.
+* Total revenue reached approximately **$29.27M**
+* 2025 generated the highest revenue
+* Revenue peaked in December 2025 at approximately **$1.87M**
+* Strong Q4 seasonality was observed
 
 ---
 
 ## 2. Product Performance
 
-### Product Category Analysis
+![Product Analysis](Files/product_analysis.png)
 
-Revenue is highly concentrated in the Bikes category.
+Revenue contribution by category:
 
 | Category    | Revenue Contribution |
 | ----------- | -------------------- |
-| Bikes       | ~96.6%               |
-| Accessories | ~2.3%                |
-| Clothing    | ~1.1%                |
+| Bikes       | 96.6%                |
+| Accessories | 2.3%                 |
+| Clothing    | 1.1%                 |
 
-### Top Performing Subcategories
+Top-performing subcategories:
 
 * Road Bikes
 * Mountain Bikes
 * Touring Bikes
 
-These three subcategories account for the vast majority of total revenue.
-
-### Top Revenue Products
-
-Highest-performing products include multiple variants of:
-
-* Mountain-200 Black Series
-* Mountain-200 Silver Series
-* Road-150 Red Series
-
-The highest revenue-generating product is:
+Highest revenue product:
 
 **Mountain-200 Black, 46**
 
-with approximately **$1.37M** in revenue.
+Revenue: approximately **$1.37M**
 
 ---
 
 ## 3. Customer Analysis
 
-* Customer spending is relatively balanced across genders.
-* Female customers generated approximately **$14.77M** in revenue.
-* Male customers generated approximately **$14.50M** in revenue.
-* No significant gender imbalance was observed.
+![Customer Analysis](Files/customer_analysis.png)
 
-This suggests that marketing efforts currently appeal effectively to both customer groups.
+* Female customers generated approximately **$14.77M**
+* Male customers generated approximately **$14.50M**
+* Revenue contribution is balanced across genders
 
 ---
 
 ## 4. Geographic Analysis
 
-Top customer cities by revenue:
+![Geographic Analysis](Files/geographic_analysis.png)
+
+Top revenue cities:
 
 1. London
 2. Paris
@@ -131,18 +189,16 @@ Top customer cities by revenue:
 
 London generated the highest revenue among all customer locations.
 
-The presence of multiple high-performing cities across different regions indicates a geographically diversified customer base.
-
 ---
 
-# Insights
+# Business Insights
 
-* Revenue is heavily dependent on the Bikes category, which contributes nearly all company sales.
-* Mountain bike and road bike products are the primary revenue drivers.
-* Revenue growth in 2025 was driven largely by a substantial increase in transaction volume.
-* Sales consistently strengthen toward the end of the year, particularly during the fourth quarter.
-* Revenue contribution is balanced between male and female customers.
-* Geographic performance is distributed across multiple international cities, reducing reliance on a single market.
+* Revenue is highly concentrated in the Bikes category
+* Product sales are dominated by Mountain and Road Bike products
+* Revenue growth in 2025 was driven by a significant increase in order volume
+* Strong year-end seasonality suggests opportunities for targeted Q4 campaigns
+* Revenue contribution is balanced across customer genders
+* Geographic revenue is diversified across multiple cities
 
 ---
 
@@ -150,41 +206,52 @@ The presence of multiple high-performing cities across different regions indicat
 
 ### Product Strategy
 
-* Reduce revenue concentration risk by expanding sales of accessories and clothing products.
-* Investigate opportunities to cross-sell complementary products alongside bike purchases.
+* Reduce dependency on bike sales by growing accessory and clothing categories
+* Develop product bundles to increase cross-selling opportunities
 
 ### Sales Strategy
 
-* Prepare inventory and marketing campaigns ahead of Q4, when demand is strongest.
-* Replicate successful promotional activities used during high-performing months.
+* Increase inventory planning before Q4 demand spikes
+* Replicate successful promotional activities used during high-performing periods
 
 ### Customer Strategy
 
-* Continue targeting both male and female customer segments equally since revenue contribution is balanced.
-* Develop loyalty programs to increase repeat purchases and customer lifetime value.
+* Strengthen customer retention through loyalty programs
+* Encourage repeat purchases through personalized promotions
 
 ### Geographic Strategy
 
-* Analyze the factors behind strong performance in London and Paris.
-* Apply similar sales and marketing approaches to lower-performing regions to encourage growth.
+* Analyze factors driving strong performance in London and Paris
+* Apply successful regional strategies to lower-performing markets
 
 ---
 
 # Tools Used
 
-* SQL – Data cleaning and transformation
-* Excel – Data validation and analysis
-* Power BI – Dashboard creation and visualization
+* SQL
+* Power BI
+* Excel
 
 ---
 
 # Project Files
 
+### Dashboard
+
+* SALES.pbix
+
+### Data
+
 * Fact_InternetSales.csv
 * Dim_Product.csv
 * Dim_Customers.csv
 * Dim_Calendar.csv
-* SQLQuery_DateCleaning.sql
-* SALES.pbix
 
-This project demonstrates end-to-end data analysis skills, including data cleaning, modeling, business analysis, dashboard development, and stakeholder-focused reporting.
+### SQL Scripts
+
+* customer_cleaning.sql
+* product_cleaning.sql
+* sales_cleaning.sql
+* calendar_cleaning.sql
+
+This project demonstrates end-to-end business intelligence skills including SQL data preparation, data modeling, dashboard development, business analysis, and stakeholder-focused reporting.
