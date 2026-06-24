@@ -15,7 +15,7 @@ The project focuses on the following areas:
 3. Customer Analysis – Purchasing behavior and customer demographics
 4. Geographic Analysis – Revenue contribution across customer locations
 
-**View Power BI Files**(Files)
+**View Power BI Files**[View Files](Files)
 ---
 
 # Data Preparation
