@@ -170,7 +170,7 @@ Compared with 2024:
 
 ## 1. Sales Performance
 
-![Sales Trend](Files/Fact_InternetSales.csv)
+[Sales Trend](Files/Fact_InternetSales.csv)
 
 * Total revenue reached approximately **$29.27M**
 * 2025 generated the highest revenue
@@ -181,7 +181,7 @@ Compared with 2024:
 
 ## 2. Product Performance
 
-![Product Analysis](Files/Dim_Product.csv)
+[Product Analysis](Files/Dim_Product.csv)
 
 Revenue contribution by category:
 
@@ -207,7 +207,7 @@ Revenue: approximately **$1.37M**
 
 ## 3. Customer Analysis
 
-![Customer Analysis](Files/Dim_Customers.csv)
+[Customer Analysis](Files/Dim_Customers.csv)
 
 * Female customers generated approximately **$14.77M**
 * Male customers generated approximately **$14.50M**
@@ -217,7 +217,7 @@ Revenue: approximately **$1.37M**
 
 ## 4. Geographic Analysis
 
-![Geographic Analysis](Files/Dim_Customers.csv)
+[Geographic Analysis](Files/Dim_Customers.csv)
 
 Top revenue cities:
 
