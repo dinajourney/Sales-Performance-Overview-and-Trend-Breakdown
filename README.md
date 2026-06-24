@@ -15,8 +15,42 @@ The project focuses on the following areas:
 3. Customer Analysis – Purchasing behavior and customer demographics
 4. Geographic Analysis – Revenue contribution across customer locations
 
-**View Power BI Files**[View Files](Files)
-**The Excel Analysis File** [View file](https://github.com/dinajourney/gamezone-sales-performance-overview-and-trend-breakdowns-English-/blob/main/gamezone-orders-data_CLeaned.xlsx)
+---
+
+# Tools Used
+
+* SQL
+* Power BI
+* Excel
+  
+---
+
+# Project Files
+
+**View Power BI Files** [View Files](Files)
+
+**View Dataset Files** [View Files](Files)
+
+
+### Dashboard
+
+* SALES.pbix
+
+### Data
+
+* Fact_InternetSales.csv
+* Dim_Product.csv
+* Dim_Customers.csv
+* Dim_Calendar.csv
+
+### SQL Scripts
+
+* customer_cleaning.sql
+* product_cleaning.sql
+* sales_cleaning.sql
+* calendar_cleaning.sql
+
+This project demonstrates end-to-end business intelligence skills including SQL data preparation, data modeling, dashboard development, business analysis, and stakeholder-focused reporting.
 
 ---
 
@@ -133,7 +167,7 @@ Compared with 2024:
 
 ## 1. Sales Performance
 
-![Sales Trend](Files/sales_trend.png)
+![Sales Trend](Files/Fact_InternetSales.csv)
 
 * Total revenue reached approximately **$29.27M**
 * 2025 generated the highest revenue
@@ -144,7 +178,7 @@ Compared with 2024:
 
 ## 2. Product Performance
 
-![Product Analysis](Files/product_analysis.png)
+![Product Analysis](Files/Dim_Product.csv)
 
 Revenue contribution by category:
 
@@ -170,7 +204,7 @@ Revenue: approximately **$1.37M**
 
 ## 3. Customer Analysis
 
-![Customer Analysis](Files/customer_analysis.png)
+![Customer Analysis](Files/Dim_Customers.csv)
 
 * Female customers generated approximately **$14.77M**
 * Male customers generated approximately **$14.50M**
@@ -180,7 +214,7 @@ Revenue: approximately **$1.37M**
 
 ## 4. Geographic Analysis
 
-![Geographic Analysis](Files/geographic_analysis.png)
+![Geographic Analysis](Files/Dim_Customers.csv)
 
 Top revenue cities:
 
@@ -227,34 +261,6 @@ London generated the highest revenue among all customer locations.
 * Analyze factors driving strong performance in London and Paris
 * Apply successful regional strategies to lower-performing markets
 
----
 
-# Tools Used
 
-* SQL
-* Power BI
-* Excel
 
----
-
-# Project Files
-
-### Dashboard
-
-* SALES.pbix
-
-### Data
-
-* Fact_InternetSales.csv
-* Dim_Product.csv
-* Dim_Customers.csv
-* Dim_Calendar.csv
-
-### SQL Scripts
-
-* customer_cleaning.sql
-* product_cleaning.sql
-* sales_cleaning.sql
-* calendar_cleaning.sql
-
-This project demonstrates end-to-end business intelligence skills including SQL data preparation, data modeling, dashboard development, business analysis, and stakeholder-focused reporting.
