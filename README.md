@@ -15,6 +15,7 @@ The project focuses on the following areas:
 3. Customer Analysis – Purchasing behavior and customer demographics
 4. Geographic Analysis – Revenue contribution across customer locations
 
+[View Power BI File](Files)
 ---
 
 # Data Preparation
@@ -25,7 +26,7 @@ The raw datasets were cleaned and transformed using SQL before being loaded into
 
 ### Customer Data Cleaning
 
-![Customer SQL](Files/Dim_Customer.png)
+![Customer SQL](Files/Dim_Customers.png)
 
 Key tasks performed:
 
@@ -70,7 +71,7 @@ Key tasks performed:
 
 The cleaned tables were connected using a star schema model inside Power BI.
 
-![Data Model](Files/MODEL VIEW.png)
+![Data Model](Files/MODEL_VIEW.png)
 
 The model consists of:
 
@@ -87,7 +88,7 @@ This structure enables efficient analysis across customers, products, and time p
 
 ## Sales Performance Dashboard
 
-![Dashboard Preview](Files/dashboard.png)
+![Dashboard Preview](Files/Dashboard.png)
 
 The dashboard provides an interactive overview of:
 
