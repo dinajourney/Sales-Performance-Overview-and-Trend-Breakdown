@@ -34,7 +34,7 @@ The project focuses on the following areas:
 
 ### Dashboard
 
-* SALES.pbix
+* [Power BI File](SALES.pbix)
 
 ### Data
 
