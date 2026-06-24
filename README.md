@@ -25,7 +25,7 @@ The raw datasets were cleaned and transformed using SQL before being loaded into
 
 ### Customer Data Cleaning
 
-![Customer SQL](Files/customer_sql.png)
+![Customer SQL](Files/Dim_Customer.png)
 
 Key tasks performed:
 
@@ -36,7 +36,7 @@ Key tasks performed:
 
 ### Product Data Cleaning
 
-![Product SQL](Files/product_sql.png)
+![Product SQL](Files/Dim_Product.png)
 
 Key tasks performed:
 
@@ -46,7 +46,7 @@ Key tasks performed:
 
 ### Sales Data Cleaning
 
-![Sales SQL](Files/sales_sql.png)
+![Sales SQL](Files/Fact_InternetSales.png)
 
 Key tasks performed:
 
@@ -56,7 +56,7 @@ Key tasks performed:
 
 ### Calendar Data Cleaning
 
-![Calendar SQL](Files/calendar_sql.png)
+![Calendar SQL](Files/Dim_Calendar.png)
 
 Key tasks performed:
 
@@ -70,7 +70,7 @@ Key tasks performed:
 
 The cleaned tables were connected using a star schema model inside Power BI.
 
-![Data Model](Files/model_view.png)
+![Data Model](Files/MODEL VIEW.png)
 
 The model consists of:
 
