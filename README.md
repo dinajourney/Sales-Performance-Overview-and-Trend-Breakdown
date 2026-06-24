@@ -35,20 +35,22 @@ The project focuses on the following areas:
 ### Dashboard
 
 * [Power BI File](Files/SALES.pbix)
+* [Dashboard Images](Files/Dashboard.png)
 
 ### Data
 
-* Fact_InternetSales.csv
-* Dim_Product.csv
-* Dim_Customers.csv
-* Dim_Calendar.csv
+* [Fact_InternetSales.csv](Files/Fact_InternetSales.csv)
+* [Fact_Budget.csv](Files/Fact_Budget.csv)
+* [Dim_Product.csv](Files/Dim_Product.csv)
+* [Dim_Customers.csv](Files/Dim_Customers.csv)
+* [Dim_Calendar.csv](Files/Dim_Calendar.csv)
 
 ### SQL Scripts
 
-* customer_cleaning.sql
-* product_cleaning.sql
-* sales_cleaning.sql
-* calendar_cleaning.sql
+* [Fact_InternetSales.sql](Files/Fact_InternetSales.sql)
+* [Dim_Product.sql](Files/Dim_Product.sql)
+* [Dim_Customers.sql](Files/Dim_Customers.sql)
+* [Dim_Calendar.sql](Files/Dim_Calendar.sql)
 
 This project demonstrates end-to-end business intelligence skills including SQL data preparation, data modeling, dashboard development, business analysis, and stakeholder-focused reporting.
 
