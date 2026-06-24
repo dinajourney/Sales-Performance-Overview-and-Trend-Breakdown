@@ -11,11 +11,11 @@ The dataset consists of sales transactions, customer information, product detail
 The project focuses on the following areas:
 
 1. Sales Performance – Revenue trends, order volume, and average order value (AOV)
-2. Product Performance – Best-selling products and categories
+2. Product Performance – Best selling products and categories
 3. Customer Analysis – Purchasing behavior and customer demographics
 4. Geographic Analysis – Revenue contribution across customer locations
 
-[View Power BI File](Files)
+**View Power BI Files**(Files)
 ---
 
 # Data Preparation
